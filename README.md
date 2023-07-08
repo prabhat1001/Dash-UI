@@ -1,6 +1,12 @@
 # Board
 
-Board is a professional 2-page UI application developed using Vite+React and deployed on Vercel. The application provides a seamless user experience with features such as authentication, user sign-up, and a dynamic dashboard. It leverages Firebase for user authentication, including Google sign-in functionality. The project incorporates various libraries to enhance functionality, including Redux for state management, react-router for efficient navigation, chart.js-2 for data visualization, and faker for generating mock data.
+Board is developed using Vite+React and deployed on Vercel. The application provides a seamless user experience with features such as authentication, user sign-up, and a dynamic dashboard. It leverages Firebase for user authentication, including Google sign-in functionality. The project incorporates various libraries to enhance functionality, including Redux for state management, react-router for efficient navigation, chart.js-2 for data visualization, and faker for generating mock data.
+
+![brandbird (15)](https://github.com/prabhat1001/Dash-UI/assets/71027441/35fc780e-106b-45f4-a1da-222b628289da)
+<br/>
+![brandbird (16)](https://github.com/prabhat1001/Dash-UI/assets/71027441/d50224a5-80fd-4f10-9737-60b5f0bda096)
+
+
 
 ## Features
 
