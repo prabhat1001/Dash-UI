@@ -1,4 +1,4 @@
-# Board
+# Board.
 
 Board is developed using Vite+React and deployed on Vercel. The application provides a seamless user experience with features such as authentication, user sign-up, and a dynamic dashboard. It leverages Firebase for user authentication, including Google sign-in functionality. The project incorporates various libraries to enhance functionality, including Redux for state management, react-router for efficient navigation, chart.js-2 for data visualization, and faker for generating mock data.
 
