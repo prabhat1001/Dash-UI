@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-cont{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #000; */
+    display: flex;
+    overflow: hidden;
+
+
+    @media(max-width: 425px){
+      flex-direction: column;
+      height: 200vh;
+    }
+}
+
+.left-cont{
+    width: 40vw;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 425px){
+      width: 100vw;
+      height: 50%;
+    }
+}
+
+.right-cont{
+    width: 60vw;
+    height: 100%;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 425px){
+      width: 100vw;
+      height: 50%;
+    }
+}
+
+.heading{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+  
+    @media(max-width: 768px){
+      font-size: 2rem;
+    }
+
+    @media(max-width: 425px){
+      font-size: 2.5rem;
+
+      &:hover{
+        scale: 1.5;
+        rotate: 360deg;
+      }
+    }
+}
+
+.auth-cont-main{
+    width: 50%;
+    height: 80%;
+    /* background: #fff; */
+    /* border: 1px solid #858585; */
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+
+    @media(max-width: 1024px){
+      width: 70%;
+      height: 80%;
+    }
+  
+    @media(max-width: 768px){
+      width: 90%;
+      height: 80%;
+    }
+
+    @media(max-width: 425px){
+      padding: 1rem;
+    }
+
+}
+
+
+.auth-cont-main h1{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+  
+  .auth-cont-main p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    color: #858585;
+  }
+  
+  .auth-cont{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    /* background: #000; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .auth-btn{
+    width: 48%;
+    height: 70%;
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .auth-btn:hover{
+    box-shadow: 0 2px 5px rgba(4,4,4,0.1);
+  }
+  
+  .icon{
+    width: 20%;
+    height: 90%;
+    /* background: #000; */
+    /* margin-left: 0.5rem; */
+  }
+  
+.auth-btn p{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #858585;
+    font-family: 'Montserrat', sans-serif;
+    /* background: #000; */
+    margin: 0 auto;
+}
+
+.sign-out-cont{
+    position: absolute;
+    top: 6%;
+    right: 80px;
+    z-index: 100;
+
+    @media screen and (max-width: 768px){
+      right: 68px;
+    }
+
+    @media screen and (max-width: 480px){
+      top: 7.5%;
+      right: 60px;
+    }
+}
+
+
+.sign-out{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+
+    @media screen and (max-width: 425px){
+      height: 30px;
+      width: 30px;
+    }
+}
+
+ 
+.sign-out:hover {
+    & .dropdown {
+      opacity: 1;
+      transition-duration: 0.8s;
+    }
+}
+
+.sign-out .user-img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dropdown{
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  background: rgb(19, 19, 19);
+  border: 1px solid rgba(151, 151, 151, 0.34);
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+  padding: 10px;
+  font-size: 14px;
+  /* letter-spacing: 3px; */
+  width: 100px;
+  opacity: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-cont{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 2rem;
+    margin-top: 1rem;
+    /* border : 1px solid #858585; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        box-shadow: 0 2px 5px rgba(4,4,4,0.1);
+    }
+}
+
+
+.form-cont label{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.form-cont input{
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    color: #858585;
+    background: #F5F5F5;
+
+    &:focus{
+        background: #EAEAEA;
+    }
+}
+
+.forgot-passw{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    color: #346BD4;
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        color: #0000ff;
+    }
+}
+
+.form-cont button{
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background: #333;
+    }
+}
+
+.end-line{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.end-line a{
+  margin-left: 0.5rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 1rem;
+  color: #346BD4;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+      color: #0000ff;
+  }
+}
+
